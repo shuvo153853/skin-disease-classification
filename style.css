@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: blueviolet;
+  margin: 0;
+  padding: 0;
+  color: white; /* Updated text color for better visibility */
+}
+
+h1 {
+  color: rgb(252, 135, 25); /* Updated text color */
+  text-decoration: underline;
+}
+
+.container {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 400px;
+  color: black; /* Ensure text inside the container remains visible */
+}
+
+.camera, .gallery {
+  margin-bottom: 20px;
+}
+
+.button-container {
+  text-align: center; /* Center align the classify button */
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Updated styles for gallery and image */
+.gallery {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center elements horizontally */
+}
+
+.gallery input[type="file"] {
+  margin-bottom: 10px; /* Add some margin between image and button */
+}
+
+#selectedImage {
+  display: block;
+  margin: 0 auto; /* Center the uploaded image */
+}
+
+#progressBar {
+  width: 380px; /* Subtract padding from container width */
+  height: 10px; /* Increased height for the progress bar */
+  background-color: darkgray; /* Empty progress bar color */
+  overflow: hidden; /* Prevents green fill from overflowing */
+  margin: 0 auto; /* Center the progress bar horizontally */
+}
+
+#progressFill {
+  width: 0%; /* Initial width of the green fill */
+  height: 10px; /* Fills the entire progress bar height */
+  background-color: green; /* Green color for the progress */
+  transition: width ease 0.5s; /* Smooth transition for progress fill */
+}
